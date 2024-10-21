@@ -4,12 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './modules/characters/characters.component';
-import { ProfileIconsComponent } from './shared/components/profile-icons/profile-icons.component';
 import { RouterModule } from '@angular/router';
+import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
+import { CharacterSelectComponent } from './modules/profiles/character-select/character-select.component';
 
 @NgModule({
-  declarations: [AppComponent, CharactersComponent, ProfileIconsComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  declarations: [AppComponent, CharactersComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    RengokuComponent,
+    CharacterSelectComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
