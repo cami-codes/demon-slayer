@@ -10,8 +10,16 @@ const routes: Routes = [
     path: 'characters',
     component: CharactersComponent,
     children: [
-      { path: 'rengoku', component: RengokuComponent },
-      { path: 'tokito', component: TokitoComponent },
+      {
+        path: 'rengoku',
+        component: RengokuComponent,
+        data: { animation: 'RengokuPage' },
+      },
+      {
+        path: 'tokito',
+        component: TokitoComponent,
+        data: { animation: 'TokitoPage' },
+      },
     ],
   },
 ];
