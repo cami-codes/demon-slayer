@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CharactersComponent } from './modules/characters/characters.component';
 import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
+import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
 import { CharacterSelectComponent } from './modules/profiles/character-select/character-select.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CharacterSelectComponent } from './modules/profiles/character-select/ch
     CharacterSelectComponent,
     RengokuComponent,
     TokitoComponent,
+    UzuiComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

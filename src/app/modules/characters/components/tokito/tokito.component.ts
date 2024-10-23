@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './tokito.component.html',
   styleUrls: ['./tokito.component.scss'],
   standalone: true,
-  imports: [CommonModule],
 })
 export class TokitoComponent {}

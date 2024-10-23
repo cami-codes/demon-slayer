@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './rengoku.component.html',
   styleUrls: ['./rengoku.component.scss'],
   standalone: true,
-  imports: [CommonModule],
 })
 export class RengokuComponent {}
