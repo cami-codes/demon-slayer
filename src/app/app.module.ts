@@ -7,6 +7,7 @@ import { CharactersComponent } from './modules/characters/characters.component';
 import { RouterModule } from '@angular/router';
 import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
 import { CharacterSelectComponent } from './modules/profiles/character-select/character-select.component';
+import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
 
 @NgModule({
   declarations: [AppComponent, CharactersComponent],
@@ -14,8 +15,9 @@ import { CharacterSelectComponent } from './modules/profiles/character-select/ch
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RengokuComponent,
     CharacterSelectComponent,
+    RengokuComponent,
+    TokitoComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

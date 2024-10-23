@@ -31,6 +31,6 @@ export class CharacterSelectComponent implements OnInit {
 
   public selectCharacter(character: string): void {
     this.activeCharacter = character;
-    this.router.navigate([`characters/${character}`]);
+    this.router.navigate([`characters/${character.toLowerCase()}`]);
   }
 }
