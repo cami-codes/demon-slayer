@@ -5,6 +5,7 @@ import { RengokuComponent } from './modules/characters/components/rengoku/rengok
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
 import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
 import { SanemiComponent } from './modules/characters/components/sanemi/sanemi.component';
+import { MitsuriComponent } from './modules/characters/components/mitsuri/mitsuri.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/characters/rengoku', pathMatch: 'full' },
@@ -31,6 +32,11 @@ const routes: Routes = [
         path: 'sanemi',
         component: SanemiComponent,
         data: { animation: 'SanemiPage' },
+      },
+      {
+        path: 'mitsuri',
+        component: MitsuriComponent,
+        data: { animation: 'MitsuriPage' },
       },
     ],
   },

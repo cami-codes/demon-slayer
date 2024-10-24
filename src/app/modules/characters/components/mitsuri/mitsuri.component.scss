@@ -1,0 +1,63 @@
+.mitsuri {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 770px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #fb73a9 40.29%, #b4e73e 68.2%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: -60%;
+    left: -109%;
+
+    img {
+      width: 151vw;
+      transform: rotate(65deg);
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 38%;
+    z-index: 999;
+
+    img {
+      height: 96vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 53%;
+      left: -41%;
+      width: 208%;
+      height: 49%;
+      background: #a04b6d;
+      filter: blur(306px);
+      z-index: -1;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    z-index: 1;
+    top: -12%;
+    left: 54%;
+    transform: rotate(121deg);
+
+    img {
+      width: 66vw;
+    }
+  }
+}
