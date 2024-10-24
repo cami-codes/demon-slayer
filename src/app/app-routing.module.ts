@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CharactersComponent } from './modules/characters/characters.component';
+import { GyomeiComponent } from './modules/characters/components/gyomei/gyomei.component';
 import { MitsuriComponent } from './modules/characters/components/mitsuri/mitsuri.component';
 import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
 import { SanemiComponent } from './modules/characters/components/sanemi/sanemi.component';
 import { ShinobuComponent } from './modules/characters/components/shinobu/shinobu.component';
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
+import { TomiokaComponent } from './modules/characters/components/tomioka/tomioka.component';
 import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
-import { GyomeiComponent } from './modules/characters/components/gyomei/gyomei.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/characters/rengoku', pathMatch: 'full' },
@@ -49,6 +50,11 @@ const routes: Routes = [
         path: 'gyomei',
         component: GyomeiComponent,
         data: { animation: 'GyomeiPage' },
+      },
+      {
+        path: 'tomioka',
+        component: TomiokaComponent,
+        data: { animation: 'TomiokaPage' },
       },
     ],
   },

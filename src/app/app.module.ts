@@ -14,6 +14,7 @@ import { ShinobuComponent } from './modules/characters/components/shinobu/shinob
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
 import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
 import { CharacterSelectComponent } from './modules/profiles/character-select/character-select.component';
+import { TomiokaComponent } from './modules/characters/components/tomioka/tomioka.component';
 
 @NgModule({
   declarations: [AppComponent, CharactersComponent],
@@ -30,6 +31,7 @@ import { CharacterSelectComponent } from './modules/profiles/character-select/ch
     MitsuriComponent,
     ShinobuComponent,
     GyomeiComponent,
+    TomiokaComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
