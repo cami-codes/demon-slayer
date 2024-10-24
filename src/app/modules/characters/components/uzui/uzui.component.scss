@@ -1,0 +1,64 @@
+.uzui {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 780px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #eb3950 0%, #782231 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: -139%;
+    transform: rotate(100deg);
+
+    img {
+      width: 125vw;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 33%;
+    z-index: 999;
+
+    img {
+      height: 97vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32%;
+      left: -10%;
+      width: 136%;
+      height: 19%;
+      background: rgba(154, 51, 69, 1);
+      filter: blur(176px);
+      z-index: -3;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: 23%;
+    transform: rotate(242deg);
+
+    img {
+      width: 98vw;
+    }
+  }
+}

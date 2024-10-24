@@ -1,0 +1,46 @@
+.tomioka {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 780px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #a85269 23.87%, #4979e2 80.01%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: -1%;
+    left: 55%;
+
+    img {
+      width: 76vw;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 61%;
+    z-index: 999;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28%;
+      left: -67%;
+      width: 167%;
+      height: 95%;
+      background: #3c5e92;
+      filter: blur(194px);
+      z-index: -3;
+    }
+  }
+}

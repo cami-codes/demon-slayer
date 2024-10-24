@@ -1,0 +1,62 @@
+.rengoku {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 770px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #fff70e, #ff3e0e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: -7%;
+    left: 0%;
+
+    img {
+      width: 80vw;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 43%;
+    z-index: 999;
+
+    img {
+      height: 49vw;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 73%;
+      left: -21%;
+      width: 129%;
+      height: 28%;
+      background: #ed622f;
+      filter: blur(316px);
+      z-index: -1;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    z-index: 1;
+    top: 22%;
+    left: 43%;
+
+    img {
+      height: 100%;
+      width: calc(100% + 31rem);
+    }
+  }
+}

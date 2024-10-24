@@ -1,0 +1,19 @@
+.characters {
+  width: 100vw;
+  height: 100vh;
+  background: #181818;
+  background-image: url(../../../assets/images/dark-background.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+  &__select {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    padding-bottom: 48px;
+    padding-left: 66px;
+  }
+}

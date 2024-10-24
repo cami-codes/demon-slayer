@@ -1,0 +1,50 @@
+.shinobu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 780px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #ffffff 14%, #5f3cb3 80.01%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: -113%;
+    left: -139%;
+    transform: rotate(273deg);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(-36deg);
+
+    img {
+      width: 131vw;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 43%;
+    z-index: 999;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: -24%;
+      width: 125%;
+      height: 66%;
+      background: #3c2c63;
+      filter: blur(265px);
+      z-index: -3;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="card">
+  <div
+    class="card__item"
+    *ngFor="let character of characters"
+    [class.active]="character.name === activeCharacter"
+    (click)="selectCharacter(character.name)"
+  >
+    <img [src]="character.image" [alt]="character.name" />
+  </div>
+</div>
