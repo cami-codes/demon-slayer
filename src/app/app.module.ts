@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './modules/characters/characters.component';
 import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
+import { SanemiComponent } from './modules/characters/components/sanemi/sanemi.component';
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
 import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
 import { CharacterSelectComponent } from './modules/profiles/character-select/character-select.component';
@@ -22,6 +23,7 @@ import { CharacterSelectComponent } from './modules/profiles/character-select/ch
     RengokuComponent,
     TokitoComponent,
     UzuiComponent,
+    SanemiComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
