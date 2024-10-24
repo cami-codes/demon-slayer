@@ -7,6 +7,7 @@ import { SanemiComponent } from './modules/characters/components/sanemi/sanemi.c
 import { ShinobuComponent } from './modules/characters/components/shinobu/shinobu.component';
 import { TokitoComponent } from './modules/characters/components/tokito/tokito.component';
 import { UzuiComponent } from './modules/characters/components/uzui/uzui.component';
+import { GyomeiComponent } from './modules/characters/components/gyomei/gyomei.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/characters/rengoku', pathMatch: 'full' },
@@ -43,6 +44,11 @@ const routes: Routes = [
         path: 'shinobu',
         component: ShinobuComponent,
         data: { animation: 'ShinobuPage' },
+      },
+      {
+        path: 'gyomei',
+        component: GyomeiComponent,
+        data: { animation: 'GyomeiPage' },
       },
     ],
   },

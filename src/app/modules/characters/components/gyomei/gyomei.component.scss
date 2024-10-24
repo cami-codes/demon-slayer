@@ -1,0 +1,46 @@
+.gyomei {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 91px;
+  padding-left: 66px;
+  width: 780px;
+  position: relative;
+
+  h1 {
+    background: linear-gradient(180deg, #fffaaa 14%, #aaa446 80.01%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 999;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: 1;
+    top: -1%;
+    left: 55%;
+
+    img {
+      width: 76vw;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    top: 2%;
+    left: 43%;
+    z-index: 999;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17%;
+      left: -24%;
+      width: 125%;
+      height: 96%;
+      background: #6a6523;
+      filter: blur(502px);
+      z-index: -3;
+    }
+  }
+}
