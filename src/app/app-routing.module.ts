@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CharactersComponent } from './modules/characters/characters.component';
 import { GyomeiComponent } from './modules/characters/components/gyomei/gyomei.component';
 import { MitsuriComponent } from './modules/characters/components/mitsuri/mitsuri.component';
+import { ObanaiComponent } from './modules/characters/components/obanai/obanai.component';
 import { RengokuComponent } from './modules/characters/components/rengoku/rengoku.component';
 import { SanemiComponent } from './modules/characters/components/sanemi/sanemi.component';
 import { ShinobuComponent } from './modules/characters/components/shinobu/shinobu.component';
@@ -55,6 +56,11 @@ const routes: Routes = [
         path: 'tomioka',
         component: TomiokaComponent,
         data: { animation: 'TomiokaPage' },
+      },
+      {
+        path: 'obanai',
+        component: ObanaiComponent,
+        data: { animation: 'ObanaiPage' },
       },
     ],
   },
